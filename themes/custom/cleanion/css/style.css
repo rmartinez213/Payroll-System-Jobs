@@ -31,14 +31,20 @@ body{
 }
 
 
-/* Main Navigation */
+/***** Main Navigation *****/
 
 .main-navigation{
     position: absolute;
     bottom: 0;
 }
 
-
+/***** View CSS *****/
+.viewFullNameStyle{
+    font-size: 30px;
+}
+.viewPhoneStyle{
+    font-weight: bold; 
+}
 
 /***** Footer CSS *****/
 
