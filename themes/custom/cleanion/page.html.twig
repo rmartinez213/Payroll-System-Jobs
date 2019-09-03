@@ -1,0 +1,44 @@
+  <header role="banner">
+    <div class='header-background'>
+      <div class='header-words'>
+        {{ page.header }}
+      </div>
+
+      <div class='main-navigation container'>
+        {{ page.main_navigation }} 
+      </div>
+      
+    </div>
+  </header>
+    
+  <div class='container'>
+    {{ page.primary_menu }}
+  </div>
+
+
+  <div class='main-container'>
+
+
+    <main role="main" class=''>
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+      <div class="layout-content">
+        {{ page.content }}
+      </div>{# /.layout-content #}
+
+      {% if page.sidebar %}
+        <aside class="layout-sidebar-first" role="complementary">
+          {{ page.sidebar }}
+        </aside>
+      {% endif %}
+
+    </main>
+  </div>{# /.layout-container #}
+
+
+
+  {% if page.footer %}
+    <footer role="contentinfo" class='footer-style'>
+      {{ page.footer }}
+    </footer>
+  {% endif %}

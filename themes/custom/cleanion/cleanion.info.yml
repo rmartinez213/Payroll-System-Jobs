@@ -1,0 +1,16 @@
+name: Cleanion
+description: Drupal 8 Custom Theme
+type: theme
+core: 8.x
+libraries:
+  - cleanion/global-css
+  - cleanion/global-js
+stylesheets-remove:
+  - sites/default/files/css/css_DfIk0kDE_97QqZBJr5TF4iiP6Rt7nG3gWSu-Jh5AKCY.css
+
+regions:
+  content: 'Main Content'
+  header: 'Header'
+  footer: 'Footer'
+  sidebar: 'Sidebar'
+  main_navigation: 'Main Navigation'
